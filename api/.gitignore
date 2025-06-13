@@ -1,7 +1,5 @@
 node_modules
-
-env
-
+src
 dist
 # yarn error log
 yarn-error.log
@@ -9,3 +7,9 @@ yarn-error.log
 .vscode
 #coverage
 coverage
+# env
+.env
+# local env files
+.env.local
+# dotenv files
+*.log

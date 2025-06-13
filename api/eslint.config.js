@@ -8,7 +8,7 @@ export default [
   prettier, // disables ESLint rules that conflict with Prettier
   {
     files: ['**/*.ts'],
-    ignores: ['dist', 'node_modules'],
+    ignores: ['dist', 'node_modules', '.env', '.vscode', '*.log'],
     rules: {
       'no-console': 'off',
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
