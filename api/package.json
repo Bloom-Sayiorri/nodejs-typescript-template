@@ -1,8 +1,8 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Nodejs + Typescript template with ESLint, Prettier, and Nodemon",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,12 +19,15 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.28.0",
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.0",
     "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
     "nodemon": "^3.1.10",
     "prettier": "^3.5.3",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
   }
 }

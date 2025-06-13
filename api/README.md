@@ -1,9 +1,9 @@
 # Express and Nodejs Template + Typescript
 
--   Clone the repo using `$ git clone`or use degit to remove git reference and generate your own if needed, ie:
-    `npx degit your-username/express-ts-app new-project-name`
+- Clone the repo using `$ git clone`or use degit to remove git reference and generate your own if needed, ie:
+  `npx degit your-username/express-ts-app new-project-name`
 
--   Then cd into the project and start coding!
+- Then cd into the project and start coding!
 
 ```
 $ mkdir express-ts-app
@@ -11,20 +11,20 @@ $ cd express-ts-app
 $ npm init -y
 ```
 
--   Then install dependencies:
+- Then install dependencies:
 
 ```
 $ npm install express
 $ npm install -D typescript ts-node-dev @types/node@types/express
 ```
 
--   Generate a tsconfig file:
+- Generate a tsconfig file:
 
 ```
 $ npx tsc --init
 ```
 
--   The file will look something like this:
+- The file will look something like this:
 
 ```
 json
@@ -42,7 +42,7 @@ json
 }
 ```
 
--   Next you need to add the following file to a .gitignore file after creating one:
+- Next you need to add the following file to a .gitignore file after creating one:
 
 ```
 node_modules
@@ -50,7 +50,7 @@ dist
 .env
 ```
 
--   Upgrade you README.md to contain:
+- Upgrade you README.md to contain:
 
 ```
 json
@@ -61,4 +61,4 @@ json
 }
 ```
 
--   Finally run the project using this command: `$ npm run dev`
+- Finally run the project using this command: `$ npm run dev`
