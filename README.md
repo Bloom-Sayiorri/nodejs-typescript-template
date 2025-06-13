@@ -8,15 +8,17 @@
 npx degit your-username/express-ts-app new-project-name
 ```
 
--   Then cd into the project and start coding!
+-   Then cd into the project and start coding! You can use the dependencies available in package.json or create a new one based on your node version.
 
 ```bash
 mkdir express-ts-app
 cd express-ts-app
-npm init -y
+npm install
 ```
 
--   Install dependencies:
+### Manual installation of dependencies:
+
+-   Delete the existing package.json and pakcage-lock.json files and create a new package.json file, `$ npm init -y` and run these commands:
 
 ```bash
 npm install express
@@ -62,12 +64,11 @@ Add these scripts to your `package.json`:
 
 ```json
 "scripts": {
-  "dev": "ts-node-dev --respawn src/index.ts",
+  "dev": "nodemon",
   "build": "tsc",
   "start": "node dist/index.js",
   "lint": "eslint . --ext .ts",
   "format": "prettier --write .",
-  "watch": "nodemon"
 }
 ```
 
@@ -97,7 +98,7 @@ npx eslint . --ext .ts --fix
 -   To run with nodemon:
 
 ```bash
-npm run watch
+npm run dev
 ```
 
 ---
@@ -117,7 +118,12 @@ npm run format
 
 ## Additional Notes
 
--   **Environment variables:** Create a `.env` file in the root for environment variables (don't commit this file).
+-   **Environment variables:** Create a `.env` file in the root for environment variables and update .gitignore to include .env(don't commit this file).
+
+```gitignore
+.env
+```
+
 -   **Debugging:** You can add a `.vscode/launch.json` for easy debugging in VS Code.
 -   **Type Safety:** All code is written in TypeScript with strict type checking enabled.
 -   **Build:** Run `npm run build` to compile TypeScript to JavaScript in the `dist` folder.
