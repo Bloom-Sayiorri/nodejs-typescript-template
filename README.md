@@ -2,19 +2,23 @@
 
 ## Getting Started
 
-- Clone the repo using `$ git clone` or use degit to remove git reference and generate your own if needed, e.g.:
+- Clone the repo using `$ git clone` or use degit to remove git reference and generate your own git repo if needed, e.g.:
 
 ```bash
-npx degit your-username/express-ts-app new-project-name
+npx degit your-username/nodejs-ts-template new-project-name
 ```
 
 - Then cd into the project and start coding! You can use the dependencies available in package.json or create a new one based on your node version.
 
 ```bash
-mkdir express-ts-app
-cd express-ts-app
+mkdir nodejs-ts-template
+cd nodejs-ts-template
 npm install
 ```
+
+### Files & Folder Structure
+
+- There are sub-folders in the `src` folder namely: controllers, middlewares, models, routes, types & utils. Inside each folder is a `.gitkeep` file to preserve the folder when pushing to Github when the folder is empty. When you want to code in them, delete the `.gitkeep` file and add relevant files then push to Github.
 
 ### Manual installation of dependencies:
 
